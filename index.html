@@ -373,7 +373,6 @@
 
         <div class="tabs">
           <button type="button" class="tab active" onclick="switchTab('gmail')">Gmail Setup</button>
-          <button type="button" class="tab" onclick="switchTab('outlook')">Outlook Setup</button>
           <button type="button" class="tab" onclick="switchTab('usage')">How to Use</button>
         </div>
 
@@ -411,34 +410,6 @@
           </div>
         </div>
 
-        <div id="outlook" class="tab-content">
-          <div class="setup-section">
-            <h2>📧 Outlook API Setup</h2>
-            <div class="steps">
-              <div class="step">
-                <h3>Go to Azure Portal</h3>
-                <p>Visit <a href="https://portal.azure.com" target="_blank">Azure Portal</a> and sign in</p>
-              </div>
-              <div class="step">
-                <h3>Register an Application</h3>
-                <p>Go to Azure Active Directory → App registrations → New registration</p>
-              </div>
-              <div class="step">
-                <h3>Set Permissions</h3>
-                <p>API permissions → Add permission → Microsoft Graph → Delegated → Mail.ReadWrite</p>
-              </div>
-              <div class="step">
-                <h3>Create Client Secret</h3>
-                <p>Certificates &amp; secrets → New client secret → Copy the value</p>
-              </div>
-              <div class="step">
-                <h3>Note Your IDs</h3>
-                <p>Copy Application (client) ID and Directory (tenant) ID from Overview page</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div id="usage" class="tab-content">
           <div class="setup-section">
             <h2>💻 Installation &amp; Usage</h2>
@@ -450,8 +421,7 @@
               <div class="step">
                 <h3>Clone Repository</h3>
                 <div class="code-block">
-                  git clone https://github.com/Speedkelvyn/Speedy.github.io.git<br />cd
-                  Speedy.github.io/projects/inboxzero
+                  git clone https://github.com/Speedkelvyn/Inbox-Zero.git<br />cd Inbox-Zero
                 </div>
               </div>
               <div class="step">
@@ -474,8 +444,6 @@
               <div class="step">
                 <h3>Run the Script</h3>
                 <div class="code-block">python gmail_reader.py</div>
-                <p style="margin-top: 10px">Or for Outlook:</p>
-                <div class="code-block">python outlook_reader.py</div>
               </div>
             </div>
 
